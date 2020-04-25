@@ -96,8 +96,8 @@ if len(changed_subjects) > 0:
 	conn = smtplib.SMTP('smtp.gmail.com', 587)
 	conn.ehlo()
 	conn.starttls()
-	conn.login('amyhsiao2015@gmail.com', 'imzoioxgatqjdzix')
-	conn.sendmail('amyhsiao2015@gmail.com', 'amyhsiao2015@gmail.com', 'Subject:Grades updated~\n\n' + change_log)
+	conn.login('youremail@gmail.com', 'code')
+	conn.sendmail('youremail@gmail.com', 'youremail@gmail.com', 'Subject:Grades updated~\n\n' + change_log)
 	conn.quit()
 
 	print("email sent")
